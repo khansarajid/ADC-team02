@@ -8,16 +8,19 @@ front of itself using Reinforcement Learning (PPO) in MuJoCo.
 ## Project structure
 
 ```
-models/           G1 robot XML + scene with ball
-src/
-  baseline.py       Task 1: scripted (non-learning) ball drop
-  ball_drop_env.py  Task 2: Gymnasium environment + reward function
-  train.py          Task 2: PPO training script
-  evaluate.py       Task 2: run trained policy, generate graphs
-results/          evaluation graphs, logs, landing-position data
-trained_models/   saved policies
-docs/             Task 1 task definition, Task 3 Sim2Real concept
+assets/unitree_g1/  official Unitree G1 29DoF MuJoCo model (from unitree_mujoco)
+envs/               Gymnasium environment (adapted from course throw env)
+scripts/            scene creation, training, evaluation, playback scripts
+                    (adapted from humanoid-robot-fundamentals course repo)
+src/                commented reference skeletons (learning material)
+models/             (unused — kept for extra scene files)
+results/            evaluation graphs, logs, landing-position data
+trained_models/     saved policies
+docs/               Task 1 task definition, Task 3 Sim2Real concept
 ```
+
+Credits: G1 model from https://github.com/unitreerobotics/unitree_mujoco;
+pipeline scripts adapted from the course repo by Rudolf Krecht.
 
 ## Setup
 
