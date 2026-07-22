@@ -6,12 +6,19 @@ The Unitree G1 (29 DoF) humanoid must learn to drop a ball directly in front
 of itself in a controlled and repeatable manner, in MuJoCo simulation.
 
 - Start state: robot standing upright, ball held at the hand position.
+- Ball: **4 cm diameter, 50 g** (fixed by the task constraints).
 - Desired behaviour: TODO — describe the motion (lower arm forward, release,
   ball lands in target zone, robot remains standing).
-- Target zone: circle of radius **15 cm** centred **35 cm** in front of the
-  robot's feet (TODO: adjust numbers to what we actually use).
+- Target zone: NOT strictly defined by the organizers — we define and
+  justify it. Proposal: circle of radius **15 cm** centred **35 cm** in
+  front of the robot's feet (TODO: adjust + justify, e.g. "reachable by a
+  natural arm extension, larger than baseline scatter").
 - Out of scope: five-fingered hand control (per task definition, release is
   modelled as detaching the ball in simulation).
+- Also fixed by constraints: G1 29DoF, non-learning baseline required, at
+  least one completed RL run, saved policy handed over, simulation only.
+  Free choices we must defend: algorithm (PPO), reward design, obs/action
+  spaces, target size, release strategy.
 
 ## 2. Success criteria and evaluation metrics  (10 pts)
 
