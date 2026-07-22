@@ -40,9 +40,12 @@ python src/evaluate.py        # evaluate policy + produce graphs
 
 ## Team
 
-- Benjamin Collu — <role>
-- Khansa Abbasi — <role>
-- <add members>
+- Benjamin Collu
+- Khansa Rajid
+- Andrej Krizan
+- Daniel Sirghii
+- Assyl Mursalim
+- Natalia Stranovska
 
 ## Task overview
 
