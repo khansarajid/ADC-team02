@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+
+# Training junk (keep final models, ignore intermediate logs if large)
+*.tmp
+tensorboard_logs/
