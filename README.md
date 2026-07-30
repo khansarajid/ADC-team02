@@ -1,4 +1,4 @@
-# ADC Team 02 — Ball Drop with Reinforcement Learning
+# ADC Team 02 — Ball Throw with Reinforcement Learning
 
 Audi Development Camp 2026 — AI Robotics Use Case.
 
