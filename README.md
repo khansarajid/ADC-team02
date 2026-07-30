@@ -4,9 +4,7 @@
 
 Built in just one week for the 2026 Audi AI & Robotics challenge, this project demonstrates how we bridged the gap between deterministic whole-body control and reinforcement learning on a free-floating robotic base.
 
-Audi Development Camp 2026 — AI Robotics Use Case.
-
-A simulated Unitree G1 (29 DoF) humanoid learns to drop a ball directly in
+A simulated Unitree G1 (29 DoF) humanoid learns to throw a ball directly in
 front of itself using Reinforcement Learning (PPO) in MuJoCo.
 
 ## Project structure
