@@ -1,5 +1,9 @@
 # ADC Team 02 — Ball Throw with Reinforcement Learning
 
+<img width="1920" height="1080" alt="demo_gif" src="https://github.com/user-attachments/assets/13221892-83f5-4e85-8c32-ac56bdd7847e" />
+
+Built in just one week for the 2026 Audi AI & Robotics challenge, this project demonstrates how we bridged the gap between deterministic whole-body control and reinforcement learning on a free-floating robotic base.
+
 Audi Development Camp 2026 — AI Robotics Use Case.
 
 A simulated Unitree G1 (29 DoF) humanoid learns to drop a ball directly in
