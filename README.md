@@ -49,6 +49,14 @@ python src/evaluate.py        # evaluate policy + produce graphs
 - Assyl Mursalim
 - Natalia Stranovska
 
+## My contribution (Khansa Rajid)
+
+I worked on the scripted baseline, the reinforcement learning training and the evaluation:
+
+- **Scripted baseline (Task 1):** built the deterministic throwing motion for the Unitree G1 in MuJoCo, which set the reference performance the RL policy had to beat.
+- **RL training (Task 2):** ran and iterated on the PPO training runs (Gymnasium + Stable-Baselines3), training the policy to throw the ball forward from a free-floating base.
+- **Evaluation:** evaluated the trained policies against the baseline and produced the evaluation graphs.
+
 ## Task overview
 
 1. **Task 1** — task definition, success criteria, validated sim, scripted baseline
