@@ -57,6 +57,32 @@ I worked on the scripted baseline, the reinforcement learning training and the e
 - **RL training (Task 2):** ran and iterated on the PPO training runs (Gymnasium + Stable-Baselines3), training the policy to throw the ball forward from a free-floating base.
 - **Evaluation:** evaluated the trained policies against the baseline and produced the evaluation graphs.
 
+## Results (trained RL policy, 100 throws)
+
+The trained PPO policy was evaluated over 100 throws in MuJoCo. Full data: [results/throw_results.csv](results/throw_results.csv)
+
+| Metric | Result |
+|---|---|
+| Throwing distance | 1.98 m mean (max 3.49 m) |
+| Release velocity | 5.42 m/s mean |
+| Release time | 0.116 s mean |
+| Stability | 100% of throws within ±15° torso tilt (max 12.3°) |
+| Release angle | 42.2° mean vs 45° target, 18% within tolerance |
+| Target error | 1.44 m mean, 0% inside the 0.25 m target zone |
+| Repeatability | 0.54 m landing spread |
+
+**Takeaway:** the policy throws reliably and keeps the robot balanced, and its landings cluster tightly. The cluster sits about 1 m to the side of the target, so the miss is mainly in aim direction rather than power. Release-angle control is the next thing to improve.
+
+![Landing positions](results/landing_positions.png)
+
+![Throwing distance per throw](results/throwing_distance.png)
+
+![Release angle vs target](results/release_angle.png)
+
+![Robot stability](results/stability.png)
+
+*Torso tilt is recorded as the running maximum across throws; it never exceeded 12.3°.*
+
 ## Task overview
 
 1. **Task 1** — task definition, success criteria, validated sim, scripted baseline
